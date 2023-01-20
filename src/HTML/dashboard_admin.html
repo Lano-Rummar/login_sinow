@@ -4,125 +4,150 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
     <link rel="stylesheet" href="/src/CSS/dashboard.css" />
+
+    <!----===== Icon CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <title>Learning Management System</title>
+
+    <title>Dashboard SINOW </title>
   </head>
   <body>
-    <section class="sidebar">
-      <div class="nav-header">
-        <p class="logo">SINOW</p>
-        <i class="bx bx-menu btn-menu"></i>
+    <nav>
+      <div class="logo-name">
+        <div class="logo-image">
+          <img src="/img/logo.png" alt="">
+        </div>
+        <span class="logo_name">SINOW</span>
       </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">
-            <i class="bx bx-home-alt-2"></i>
-            <span class="title">Dasbor</span>
-          </a>
-          <span class="tooltip">Dasbor</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-user-check"></i>
-            <span class="title">Status Peserta</span>
-          </a>
-          <span class="tooltip">Status Peserta</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-user-plus"></i>
-            <span class="title">Registrasi Peserta</span>
-          </a>
-          <span class="tooltip">Registrasi Peserta<</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-user-detail"></i>
-            <span class="title">Absensi Siswa</span>
-          </a>
-          <span class="tooltip">Absensi Siswa</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-user-account"></i>
-            <span class="title">Management User</span>
-          </a>
-          <span class="tooltip">Management User</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-cog"></i>
-            <span class="title">Pengaturan</span>
-          </a>
-          <span class="tooltip">Pengaturan</span>
-        </li>
-        <li>
-          <a href="/src/HTML/login.html">
-            <i class="bx bx-log-out"></i>
-            <span class="title">Keluar</span>
-          </a>
-          <span class="tooltip">Keluar</span>
-        </li>
-      </ul>
-      <div class="theme-wrapper">
-        <i class="bx bxs-moon theme-icon"></i>
-        <p>Dark Theme</p>
-        <div class="theme-btn">
-          <span class="theme-ball"></span>
+      <div class="menu-items">
+        <ul class="nav-links">
+          <li>
+            <a href="#">
+                <i class="bx bx-home-alt-2"></i>
+              <span class="link-name">Dasbor</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="bx bxs-user-check"></i>
+              <span class="link-name">Status Siswa</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="bx bxs-user-plus"></i>
+              <span class="link-name">Registrasi Siswa</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="bx bxs-user-detail"></i>
+              <span class="link-name">Absensi Siswa</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="bx bxs-user-account"></i>
+              <span class="link-name">Management User</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+                <i class="bx bx-cog"></i>
+              <span class="link-name">Pengaturan</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="logout-mode">
+          <li>
+            <a href="/src/HTML/login.html">
+                <i class="bx bx-log-out"></i>
+              <span class="link-name">Keluar</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <a href="#">
+            <i class="bx bxs-moon theme-icon"></i>
+              <span class="link-name">Dark Mode</span>
+            </a>
+
+            <div class="mode-toggle">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="dashboard">
+      <div class="top">
+        <i class="uil uil-bars sidebar-toggle"></i>
+        <img src="/img/admin.png" alt="">
+      </div>
+
+      <div class="dash-content">
+        <div class="overview">
+          <div class="title">
+            <i class="uil uil-tachometer-fast-alt"></i>
+            <span class="text">Kursus yang baru diakses</span>
+          </div>
+
+          <div class="boxes">
+            <div class="box box1">
+                <i class='bx bxs-book-content'></i>
+              <span class="text">none</span>
+              <span class="number">none</span>
+            </div>
+            <div class="box box2">
+                <i class='bx bxs-book-content'></i>
+              <span class="text">none</span>
+              <span class="number">none</span>
+            </div>
+            <div class="box box3">
+                <i class='bx bxs-book-content'></i>
+              <span class="text">none</span>
+              <span class="number">none</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity">
+          <div class="title">
+            <i class="uil uil-clock-three"></i>
+            <span class="text">Gambaran Kursus</span>
+          </div>
+          <div class="boxes">
+            <div class="box box1">
+                <i class='bx bxs-book-content'></i>
+              <span class="text">none</span>
+              <span class="number">none</span>
+            </div>
+            <div class="box box2">
+                <i class='bx bxs-book-content'></i>
+              <span class="text">none</span>
+              <span class="number">none</span>
+            </div>
+            <div class="box box3">
+                <i class='bx bxs-book-content'></i>
+              <span class="text">none</span>
+              <span class="number">none</span>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="home">
-      <p>Learning Management System</p>
-    </section>
-
-    <script>
-      const btn_menu = document.querySelector('.btn-menu');
-      const side_bar = document.querySelector('.sidebar');
-
-      btn_menu.addEventListener('click', function () {
-        side_bar.classList.toggle('expand');
-        changebtn();
-      });
-
-      function changebtn() {
-        if (side_bar.classList.contains('expand')) {
-          btn_menu.classList.replace('bx-menu', 'bx-menu-alt-right');
-        } else {
-          btn_menu.classList.replace('bx-menu-alt-right', 'bx-menu');
-        }
-      }
-
-      const btn_theme = document.querySelector('.theme-btn');
-      const theme_ball = document.querySelector('.theme-ball');
-
-      const localData = localStorage.getItem('theme');
-
-      if (localData == null) {
-        localStorage.setItem('theme', 'light');
-      }
-
-      if (localData == 'dark') {
-        document.body.classList.add('dark-mode');
-        theme_ball.classList.add('dark');
-      } else if (localData == 'light') {
-        document.body.classList.remove('dark-mode');
-        theme_ball.classList.remove('dark');
-      }
-
-      btn_theme.addEventListener('click', function () {
-        document.body.classList.toggle('dark-mode');
-        theme_ball.classList.toggle('dark');
-        if (document.body.classList.contains('dark-mode')) {
-          localStorage.setItem('theme', 'dark');
-        } else {
-          localStorage.setItem('theme', 'light');
-        }
-      });
-    </script>
+    </section> 
+    <script src="/src/JS/dashboard.js"></script>
   </body>
 </html>

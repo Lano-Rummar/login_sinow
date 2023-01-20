@@ -1,0 +1,22 @@
+#HTML#
+<button type="submit" class="btn" onclick="openPopup()">
+              Masuk
+</button>
+
+<div class="popup" id="popup">
+              <h2>Selamat Belajar!</h2>
+              <p>Anda berhasil masuk</p>
+              <button type="button" onclick="closePopup()">OK</button>
+            </div>
+
+#JS#
+
+<script>
+      let popup = document.getElementById('popup');
+      function openPopup() {
+        popup.classList.add('open-popup');
+      }
+      function closePopup() {
+        popup.classList.remove('open-popup');
+      }
+</script>
